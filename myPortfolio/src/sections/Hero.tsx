@@ -1,11 +1,11 @@
-import { motion } from 'framer-motion';
-import type { JSX } from 'react/jsx-runtime';
+import type { JSX } from "react/jsx-runtime";
+import { motion } from "framer-motion";
 
 export default function Hero(): JSX.Element {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-black via-gray-900 to-black"
+      className="scroll-mt-24 relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-black via-gray-900 to-black"
     >
       {/* Glow Blobs */}
       <div className="absolute -top-20 -left-20 w-72 h-72 bg-purple-600/30 rounded-full blur-3xl animate-pulse" />
@@ -13,8 +13,9 @@ export default function Hero(): JSX.Element {
 
       <motion.div
         initial={{ opacity: 0, y: 60 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, ease: 'easeOut' }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: false, amount: 0.3 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
         className="relative z-10 text-center max-w-3xl px-6"
       >
         <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-purple-500">
@@ -24,18 +25,26 @@ export default function Hero(): JSX.Element {
           Full Stack Developer • React • Node.js • AI Enthusiast
         </p>
         <div className="mt-10 flex justify-center gap-6">
-          <a
-            href="#projects"
+          <button
+            onClick={() =>
+              document
+                .getElementById("projects")
+                ?.scrollIntoView({ behavior: "smooth" })
+            }
             className="px-6 py-3 rounded-lg bg-gradient-to-r from-cyan-500 to-purple-600 text-white font-semibold shadow-lg hover:scale-105 transition-transform"
           >
             View Projects
-          </a>
-          <a
-            href="#contact"
+          </button>
+          <button
+            onClick={() =>
+              document
+                .getElementById("contact")
+                ?.scrollIntoView({ behavior: "smooth" })
+            }
             className="px-6 py-3 rounded-lg border border-white/20 text-white hover:bg-white/10 transition"
           >
             Contact Me
-          </a>
+          </button>
         </div>
       </motion.div>
     </section>
