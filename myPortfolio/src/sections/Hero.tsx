@@ -22,7 +22,7 @@ export default function Hero(): JSX.Element {
           Salauddin Shible
         </h1>
         <p className="mt-6 text-lg md:text-xl text-gray-300">
-          Full Stack Developer • React • Node.js • AI Enthusiast
+          Backend Developer | Node.js | Express | PostgreSQL | MySQL | Deep Learning
         </p>
         <div className="mt-10 flex justify-center gap-6">
           <button
