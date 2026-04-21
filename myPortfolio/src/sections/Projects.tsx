@@ -19,7 +19,7 @@ const projects: Project[] = [
       "Manages employee records, payroll and leave workflow",
       "Secure authentication & authorization",
     ],
-    ele: ["Node.js", "Express", "TypeScript", "MySQL", "Drizzle ORM"],
+    ele: ["Node.js", "Express", "TypeScript", "PostgreSQL", "Drizzle ORM"],
     links: ["abc.com", "https://github.com/shible77/HR-Management-System-Server"],
     tag: "Backend",
   },
@@ -31,8 +31,8 @@ const projects: Project[] = [
       "JWT-based authentication system",
       "Handles concurrent users with consistent message delivery",
     ],
-    ele: ["Node.js", "Express", "TypeScript", "MySQL", "Socket.IO"],
-    links: ["abc.com", "https://github.com/your-username/realtime-chat-app"],
+    ele: ["Node.js", "Express", "TypeScript", "MySQL", "Socket.IO", "React"],
+    links: ["abc.com", "https://github.com/shible77/Real-Time-Chatting-App"],
     tag: "Real-Time",
   },
   {
@@ -43,8 +43,8 @@ const projects: Project[] = [
       "Image preprocessing for feature enhancement",
       "Trained and evaluated on plant disease dataset",
     ],
-    ele: ["Python", "TensorFlow/Keras", "OpenCV", "EfficientNet/MobileNetV3"],
-    links: ["abc.com", "https://github.com/your-username/tomato-disease-classification"],
+    ele: ["Python", "TensorFlow/Keras", "OpenCV", "EfficientNet/MobileNetV3", "React"],
+    links: ["https://tomato-leaf-disease-predictor.onrender.com/", "https://github.com/shible77/FullStack-Tomato-Plant-Disease-Classification"],
     tag: "Machine Learning",
   },
   {
@@ -56,7 +56,7 @@ const projects: Project[] = [
       "Simple, user-friendly mobile UI for accessibility",
     ],
     ele: ["React Native", "Expo", "Firebase", "GraphQL"],
-    links: ["abc.com", "https://github.com/your-username/free-school"],
+    links: ["https://drive.google.com/file/d/1VUj5IspU2GIupVbA4lj2o8gl0PjEs7Hz/view?usp=sharing", "https://github.com/shible77/free-school"],
     tag: "Mobile",
   },
   {
@@ -67,8 +67,8 @@ const projects: Project[] = [
       "JWT authentication and user sessions",
       "CRUD operations with persistent storage",
     ],
-    ele: ["Node.js", "Express", "TypeScript", "MySQL", "Socket.IO"],
-    links: ["abc.com", "https://github.com/your-username/realtime-todo-app"],
+    ele: ["Node.js", "Express", "TypeScript", "MySQL", "Socket.IO", "React", "Redux"],
+    links: ["https://a-real-time-todo-app.onrender.com", "https://github.com/shible77/A-comprehensive-realtime-ToDo-app-using-Redux-and-socket.io"],
     tag: "Real-Time",
   },
   {
@@ -80,7 +80,7 @@ const projects: Project[] = [
       "Simplifies management for building owners and tenants",
     ],
     ele: ["PHP", "HTML", "CSS"],
-    links: ["https://github.com/your-username/residence-automation"],
+    links: ["https://github.com/shible77/Residence-Automation-System-"],
     tag: "Web App",
   },
 ];
@@ -113,7 +113,7 @@ export default function Projects(): JSX.Element {
   return (
     <section
       id="projects"
-      className="scroll-mt-24 py-20 bg-gray-50 dark:bg-gray-800"
+      className="scroll-mt-20 py-20 bg-gray-50 dark:bg-gray-800"
     >
       <div className="max-w-6xl mx-auto px-6">
 

@@ -20,7 +20,7 @@ export default function App(): JSX.Element {
   }, [theme]);
 
   return (
-    <div className="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300">
+    <div className="bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-gray-100 transition-colors duration-300">
       <Navbar theme={theme} setTheme={setTheme} />
       <Hero />
       <About />

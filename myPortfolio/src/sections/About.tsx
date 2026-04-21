@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export default function About(): JSX.Element {
   return (
-    <section id="about" className="scroll-mt-24 py-20 max-w-5xl mx-auto px-6">
+    <section id="about" className="scroll-mt-24 py-20 max-w-5xl mx-auto px-6  bg-gray-50 dark:bg-gray-800">
       <motion.h2
         initial={{ opacity: 0, x: -40 }}
         whileInView={{ opacity: 1, x: 0 }}
@@ -14,7 +14,7 @@ export default function About(): JSX.Element {
         About Me
       </motion.h2>
       <motion.div
-        initial={{ opacity: 0, y: -20 }}
+        initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: false, amount: 0.3 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
