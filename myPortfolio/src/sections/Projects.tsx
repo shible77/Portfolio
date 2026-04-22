@@ -19,9 +19,9 @@ const projects: Project[] = [
       "Manages employee records, payroll and leave workflow",
       "Secure authentication & authorization",
     ],
-    ele: ["Node.js", "Express", "TypeScript", "PostgreSQL", "Drizzle ORM"],
+    ele: ["Node.js", "Express", "TypeScript", "PostgreSQL", "Drizzle ORM", "Swagger"],
     links: ["abc.com", "https://github.com/shible77/HR-Management-System-Server"],
-    tag: "Backend",
+    tag: "RestAPI",
   },
   {
     name: "Real-Time Chat Application",
@@ -43,7 +43,7 @@ const projects: Project[] = [
       "Image preprocessing for feature enhancement",
       "Trained and evaluated on plant disease dataset",
     ],
-    ele: ["Python", "TensorFlow/Keras", "OpenCV", "EfficientNet/MobileNetV3", "React"],
+    ele: ["Python", "TensorFlow/Keras", "OpenCV", "EfficientNet/MobileNetV3", "React", "FastAPI", "Docker"],
     links: ["https://tomato-leaf-disease-predictor.onrender.com/", "https://github.com/shible77/FullStack-Tomato-Plant-Disease-Classification"],
     tag: "Machine Learning",
   },
@@ -86,7 +86,7 @@ const projects: Project[] = [
 ];
 
 const tagStyles: Record<string, string> = {
-  "Backend":       "bg-violet-100 text-violet-700 dark:bg-violet-900/40 dark:text-violet-300",
+  "RestAPI":       "bg-violet-100 text-violet-700 dark:bg-violet-900/40 dark:text-violet-300",
   "Real-Time":        "bg-sky-100 text-sky-700 dark:bg-sky-900/40 dark:text-sky-300",
   "Machine Learning": "bg-emerald-100 text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-300",
   "Mobile":           "bg-amber-100 text-amber-700 dark:bg-amber-900/40 dark:text-amber-300",
@@ -94,7 +94,7 @@ const tagStyles: Record<string, string> = {
 };
 
 const dotColors: Record<string, string> = {
-  "Backend":       "bg-violet-400 dark:bg-violet-500",
+  "RestAPI":       "bg-violet-400 dark:bg-violet-500",
   "Real-Time":        "bg-sky-400 dark:bg-sky-500",
   "Machine Learning": "bg-emerald-400 dark:bg-emerald-500",
   "Mobile":           "bg-amber-400 dark:bg-amber-500",
@@ -102,7 +102,7 @@ const dotColors: Record<string, string> = {
 };
 
 const linkAccent: Record<string, string> = {
-  "Backend":       "text-violet-600 dark:text-violet-400 hover:text-violet-800 dark:hover:text-violet-200",
+  "RestAPI":       "text-violet-600 dark:text-violet-400 hover:text-violet-800 dark:hover:text-violet-200",
   "Real-Time":        "text-sky-600 dark:text-sky-400 hover:text-sky-800 dark:hover:text-sky-200",
   "Machine Learning": "text-emerald-600 dark:text-emerald-400 hover:text-emerald-800 dark:hover:text-emerald-200",
   "Mobile":           "text-amber-600 dark:text-amber-400 hover:text-amber-800 dark:hover:text-amber-200",

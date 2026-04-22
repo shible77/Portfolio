@@ -3,7 +3,10 @@ import { motion } from "framer-motion";
 
 export default function About(): JSX.Element {
   return (
-    <section id="about" className="scroll-mt-24 py-20 max-w-5xl mx-auto px-6  bg-gray-50 dark:bg-gray-800">
+    <section
+      id="about"
+      className="scroll-mt-24 py-20 max-w-5xl mx-auto px-6  bg-gray-50 dark:bg-gray-800"
+    >
       <motion.h2
         initial={{ opacity: 0, x: -40 }}
         whileInView={{ opacity: 1, x: 0 }}
@@ -21,24 +24,36 @@ export default function About(): JSX.Element {
         className="space-y-4 text-gray-600 dark:text-gray-300"
       >
         <p>
-          I'm Salauddin, a backend-focused software developer based in Bangladesh with hands-on
-          experience building scalable, production-ready systems using Node.js, TypeScript, and
-          PostgreSQL.
+          I'm Salauddin, a backend-focused software developer based in
+          Bangladesh with hands-on experience building scalable,
+          production-ready systems using Node.js, TypeScript, and PostgreSQL.
         </p>
         <p>
-          I specialize in designing clean REST APIs, implementing secure authentication systems
-          with JWT and role-based access control, and architecting normalized relational databases
-          with Drizzle ORM. I've also built real-time features using Socket.IO and have experience
+          I specialize in designing clean REST APIs, implementing secure
+          authentication systems with JWT and role-based access control, and
+          architecting normalized relational databases with Drizzle ORM. I've
+          also built real-time features using Socket.IO and have experience
           deploying services with Docker.
         </p>
         <p>
-          Beyond backend work, I've explored machine learning — building a deep learning pipeline
-          for tomato leaf disease detection using TensorFlow, FastAPI, and OpenCV. I'm passionate
-          about writing maintainable code, clean architecture, and systems that scale.
+          Beyond backend work, I've built a full-featured cross-platform mobile
+          application using React Native (Expo) and Firebase — an online
+          education platform where teachers can create courses, upload videos,
+          and build quizzes, while students can subscribe to courses, watch
+          content, and participate in assessments. This project gave me hands-on
+          experience across the full mobile development lifecycle, from
+          authentication flows to real-time data with Firestore.
         </p>
         <p>
-          I completed my BSc in Computer Science from the University of Chittagong and hold a
-          Full-Stack Web Development certification from EDGE.
+          I've also explored machine learning — building a deep learning
+          pipeline for tomato leaf disease detection using TensorFlow, FastAPI,
+          and OpenCV. I'm passionate about writing maintainable code, clean
+          architecture, and systems that scale.
+        </p>
+        <p>
+          I completed my BSc in Computer Science from the University of
+          Chittagong and hold a Full-Stack Web Development certification from
+          EDGE.
         </p>
       </motion.div>
     </section>
