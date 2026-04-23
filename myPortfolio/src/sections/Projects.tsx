@@ -32,7 +32,7 @@ const projects: Project[] = [
       "Handles concurrent users with consistent message delivery",
     ],
     ele: ["Node.js", "Express", "TypeScript", "MySQL", "Socket.IO", "React"],
-    links: ["abc.com", "https://github.com/shible77/Real-Time-Chatting-App"],
+    links: ["real-time-chatting-app-gamma.vercel.app", "https://github.com/shible77/Real-Time-Chatting-App"],
     tag: "Real-Time",
   },
   {
