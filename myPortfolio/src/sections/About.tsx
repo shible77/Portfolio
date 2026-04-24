@@ -6,7 +6,7 @@ export default function About(): JSX.Element {
     "Node.js", "Express", "TypeScript", "C/C++", "Java", "Python","PostgreSQL", "MySQL", "Drizzle ORM",
     "Socket.IO", "Docker", "React Native", "Expo", "Firebase", "TensorFlow",
     "FastAPI", "OpenCV", "JWT", "REST APIs", "Machine Learning", 
-    "React", "Redux", "Git", "Tailwind CSS", "Vercel", "Docker"
+    "React", "Redux", "Git", "Tailwind CSS", "Vercel"
   ];
 
   return (
