@@ -19,7 +19,7 @@ const projects: Project[] = [
       "Manages employee records, payroll and leave workflow",
       "Secure authentication & authorization",
     ],
-    ele: ["Node.js", "Express", "TypeScript", "PostgreSQL", "Drizzle ORM", "Swagger"],
+    ele: ["Node.js", "Express", "TypeScript", "PostgreSQL", "Drizzle ORM", "Swagger", "Redis", "BullMQ", "Docker"],
     links: ["abc.com", "https://github.com/shible77/HR-Management-System-Server"],
     tag: "RestAPI",
   },
@@ -173,7 +173,7 @@ export default function Projects(): JSX.Element {
                   {project.notes.map((note, idx) => (
                     <li key={idx} className="flex items-start gap-2 text-sm text-gray-600 dark:text-gray-300">
                       <span
-                        className={`mt-[7px] shrink-0 w-1.5 h-1.5 rounded-full ${dotColors[project.tag] ?? "bg-gray-400"}`}
+                        className={`mt-1.75 shrink-0 w-1.5 h-1.5 rounded-full ${dotColors[project.tag] ?? "bg-gray-400"}`}
                       />
                       {note}
                     </li>
