@@ -20,7 +20,7 @@ const projects: Project[] = [
       "Secure authentication & authorization",
     ],
     ele: ["Node.js", "Express", "TypeScript", "PostgreSQL", "Drizzle ORM", "Swagger", "Redis", "BullMQ", "Docker"],
-    links: ["abc.com", "https://github.com/shible77/HR-Management-System-Server"],
+    links: ["https://hr-management-system-api-8qlg.onrender.com/docs", "https://github.com/shible77/HR-Management-System-Server"],
     tag: "RestAPI",
   },
   {
