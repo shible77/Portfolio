@@ -83,7 +83,7 @@ export default function Navbar({ theme, setTheme }: NavbarProps): JSX.Element {
             Salauddin Shible
           </span>
           <span className="block text-xs font-medium uppercase tracking-[0.18em] text-gray-500 dark:text-gray-400">
-            Backend Developer
+            Fullstack Developer
           </span>
         </button>
 

@@ -21,8 +21,8 @@ export default function Hero(): JSX.Element {
         <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight bg-clip-text text-transparent bg-linear-to-br from-cyan-400 to-purple-500">
           Salauddin Shible
         </h1>
-        <p className="mt-6 text-lg md:text-xl text-gray-300">
-          Backend Developer | Node.js | Express | PostgreSQL | MySQL | Deep Learning
+        <p className="mt-6 text-lg max-w-full md:text-xl text-gray-300">
+          Fullstack Developer | NodeJS | Express | NestJS | React | Deep Learning
         </p>
         <div className="mt-10 flex justify-center gap-6">
           <button

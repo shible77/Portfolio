@@ -12,27 +12,70 @@ type Project = {
 
 const projects: Project[] = [
   {
+    name: "Roomly - Real-Time Anonymous Group Chat",
+    desc: "Full-stack real-time anonymous group chat application with WebSocket-based messaging and multi-instance horizontal scaling.",
+    notes: [
+      "Stateless Redis-backed sessions, socket mappings, and per-room presence tracking",
+      "Redis pub/sub fan-out delivers WebSocket events across multiple server instances",
+      "Cursor-based message pagination with real-time delivery via Socket.io gateway",
+    ],
+    ele: [
+      "React",
+      "Vite",
+      "TailwindCSS",
+      "Framer Motion",
+      "NestJS",
+      "TypeScript",
+      "PostgreSQL",
+      "Drizzle ORM",
+      "Redis",
+      "Socket.io",
+      "Docker",
+    ],
+    links: [
+      "https://anonymous-chat-sigma-cyan.vercel.app",
+      "https://github.com/shible77/Roomly-Real-Time-Anonymous-Chat-Application",
+    ],
+    tag: "Real-Time",
+  },
+  {
     name: "Human Resource Management System",
-    desc: "Web-based system to manage employee data, roles, and organizational workflows.",
+    desc: "Web-based backend system to manage employee data, roles, and organizational workflows.",
     notes: [
       "Role-based access control (RBAC)",
       "Manages employee records, payroll and leave workflow",
       "Secure authentication & authorization",
     ],
-    ele: ["Node.js", "Express", "TypeScript", "PostgreSQL", "Drizzle ORM", "Swagger", "Redis", "BullMQ", "Docker"],
-    links: ["https://hr-management-system-api-8qlg.onrender.com/docs", "https://github.com/shible77/HR-Management-System-Server"],
+    ele: [
+      "Node.js",
+      "Express",
+      "TypeScript",
+      "PostgreSQL",
+      "Drizzle ORM",
+      "Swagger",
+      "Redis",
+      "BullMQ",
+      "Docker",
+    ],
+    links: [
+      "https://hr-management-system-api-8qlg.onrender.com/docs",
+      "https://github.com/shible77/HR-Management-System-Server",
+    ],
     tag: "RestAPI",
   },
   {
     name: "Real-Time Chat Application",
-    desc: "Web-based group chat system enabling instant group messaging using WebSocket.",
+    desc: "Web-based fullstack group chat system enabling instant group messaging using WebSocket.",
     notes: [
       "Real-time messaging using Socket.IO",
       "JWT-based authentication system",
       "Handles concurrent users with consistent message delivery",
     ],
     ele: ["Node.js", "Express", "TypeScript", "MySQL", "Socket.IO", "React"],
-    links: ["https://real-time-chatting-app-gamma.vercel.app", "https://github.com/shible77/Real-Time-Chatting-App"],
+    links: [
+      "https://real-time-chatting-app-gamma.vercel.app",
+      "https://github.com/shible77/Real-Time-Chatting-App",
+    ],
     tag: "Real-Time",
   },
   {
@@ -43,8 +86,19 @@ const projects: Project[] = [
       "Image preprocessing for feature enhancement",
       "Trained and evaluated on plant disease dataset",
     ],
-    ele: ["Python", "TensorFlow/Keras", "OpenCV", "EfficientNet/MobileNetV3", "React", "FastAPI", "Docker"],
-    links: ["https://tomato-leaf-disease-predictor.onrender.com/", "https://github.com/shible77/FullStack-Tomato-Plant-Disease-Classification"],
+    ele: [
+      "Python",
+      "TensorFlow/Keras",
+      "OpenCV",
+      "EfficientNet/MobileNetV3",
+      "React",
+      "FastAPI",
+      "Docker",
+    ],
+    links: [
+      "https://tomato-leaf-disease-predictor.onrender.com/",
+      "https://github.com/shible77/FullStack-Tomato-Plant-Disease-Classification",
+    ],
     tag: "Machine Learning",
   },
   {
@@ -56,7 +110,10 @@ const projects: Project[] = [
       "Simple, user-friendly mobile UI for accessibility",
     ],
     ele: ["React Native", "Expo", "Firebase", "GraphQL"],
-    links: ["https://drive.google.com/file/d/1VUj5IspU2GIupVbA4lj2o8gl0PjEs7Hz/view?usp=sharing", "https://github.com/shible77/free-school"],
+    links: [
+      "https://drive.google.com/file/d/1VUj5IspU2GIupVbA4lj2o8gl0PjEs7Hz/view?usp=sharing",
+      "https://github.com/shible77/free-school",
+    ],
     tag: "Mobile",
   },
   {
@@ -67,8 +124,19 @@ const projects: Project[] = [
       "JWT authentication and user sessions",
       "CRUD operations with persistent storage",
     ],
-    ele: ["Node.js", "Express", "TypeScript", "MySQL", "Socket.IO", "React", "Redux"],
-    links: ["https://a-real-time-todo-app.onrender.com", "https://github.com/shible77/A-comprehensive-realtime-ToDo-app-using-Redux-and-socket.io"],
+    ele: [
+      "Node.js",
+      "Express",
+      "TypeScript",
+      "MySQL",
+      "Socket.IO",
+      "React",
+      "Redux",
+    ],
+    links: [
+      "https://a-real-time-todo-app.onrender.com",
+      "https://github.com/shible77/A-comprehensive-realtime-ToDo-app-using-Redux-and-socket.io",
+    ],
     tag: "Real-Time",
   },
   {
@@ -86,27 +154,35 @@ const projects: Project[] = [
 ];
 
 const tagStyles: Record<string, string> = {
-  "RestAPI":       "bg-violet-100 text-violet-700 dark:bg-violet-900/40 dark:text-violet-300",
-  "Real-Time":        "bg-sky-100 text-sky-700 dark:bg-sky-900/40 dark:text-sky-300",
-  "Machine Learning": "bg-emerald-100 text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-300",
-  "Mobile":           "bg-amber-100 text-amber-700 dark:bg-amber-900/40 dark:text-amber-300",
-  "Web App":          "bg-pink-100 text-pink-700 dark:bg-pink-900/40 dark:text-pink-300",
+  RestAPI:
+    "bg-violet-100 text-violet-700 dark:bg-violet-900/40 dark:text-violet-300",
+  "Real-Time": "bg-sky-100 text-sky-700 dark:bg-sky-900/40 dark:text-sky-300",
+  "Machine Learning":
+    "bg-emerald-100 text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-300",
+  Mobile:
+    "bg-amber-100 text-amber-700 dark:bg-amber-900/40 dark:text-amber-300",
+  "Web App": "bg-pink-100 text-pink-700 dark:bg-pink-900/40 dark:text-pink-300",
 };
 
 const dotColors: Record<string, string> = {
-  "RestAPI":       "bg-violet-400 dark:bg-violet-500",
-  "Real-Time":        "bg-sky-400 dark:bg-sky-500",
+  RestAPI: "bg-violet-400 dark:bg-violet-500",
+  "Real-Time": "bg-sky-400 dark:bg-sky-500",
   "Machine Learning": "bg-emerald-400 dark:bg-emerald-500",
-  "Mobile":           "bg-amber-400 dark:bg-amber-500",
-  "Web App":          "bg-pink-400 dark:bg-pink-500",
+  Mobile: "bg-amber-400 dark:bg-amber-500",
+  "Web App": "bg-pink-400 dark:bg-pink-500",
 };
 
 const linkAccent: Record<string, string> = {
-  "RestAPI":       "text-violet-600 dark:text-violet-400 hover:text-violet-800 dark:hover:text-violet-200",
-  "Real-Time":        "text-sky-600 dark:text-sky-400 hover:text-sky-800 dark:hover:text-sky-200",
-  "Machine Learning": "text-emerald-600 dark:text-emerald-400 hover:text-emerald-800 dark:hover:text-emerald-200",
-  "Mobile":           "text-amber-600 dark:text-amber-400 hover:text-amber-800 dark:hover:text-amber-200",
-  "Web App":          "text-pink-600 dark:text-pink-400 hover:text-pink-800 dark:hover:text-pink-200",
+  RestAPI:
+    "text-violet-600 dark:text-violet-400 hover:text-violet-800 dark:hover:text-violet-200",
+  "Real-Time":
+    "text-sky-600 dark:text-sky-400 hover:text-sky-800 dark:hover:text-sky-200",
+  "Machine Learning":
+    "text-emerald-600 dark:text-emerald-400 hover:text-emerald-800 dark:hover:text-emerald-200",
+  Mobile:
+    "text-amber-600 dark:text-amber-400 hover:text-amber-800 dark:hover:text-amber-200",
+  "Web App":
+    "text-pink-600 dark:text-pink-400 hover:text-pink-800 dark:hover:text-pink-200",
 };
 
 export default function Projects(): JSX.Element {
@@ -116,7 +192,6 @@ export default function Projects(): JSX.Element {
       className="scroll-mt-20 py-20 bg-gray-50 dark:bg-gray-800"
     >
       <div className="max-w-6xl mx-auto px-6">
-
         {/* Heading — same style as About */}
         <motion.h2
           initial={{ opacity: 0, y: 30 }}
@@ -134,7 +209,8 @@ export default function Projects(): JSX.Element {
           transition={{ duration: 0.6 }}
           className="text-sm mb-10"
         >
-          A collection of things I've built — from real-time systems to machine learning tools.
+          A collection of things I've built — from real-time systems to machine
+          learning tools.
         </motion.p>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project, i) => (
@@ -148,7 +224,6 @@ export default function Projects(): JSX.Element {
             >
               {/* Card body */}
               <div className="flex flex-col gap-4 p-6 flex-1">
-
                 {/* Tag */}
                 <div>
                   <span
@@ -171,7 +246,10 @@ export default function Projects(): JSX.Element {
                 {/* Notes */}
                 <ul className="flex flex-col gap-1.5">
                   {project.notes.map((note, idx) => (
-                    <li key={idx} className="flex items-start gap-2 text-sm text-gray-600 dark:text-gray-300">
+                    <li
+                      key={idx}
+                      className="flex items-start gap-2 text-sm text-gray-600 dark:text-gray-300"
+                    >
                       <span
                         className={`mt-1.75 shrink-0 w-1.5 h-1.5 rounded-full ${dotColors[project.tag] ?? "bg-gray-400"}`}
                       />
@@ -216,7 +294,9 @@ export default function Projects(): JSX.Element {
                       <LiveIcon />
                       Live Demo
                     </a>
-                    <span className="text-gray-200 dark:text-gray-700 select-none">|</span>
+                    <span className="text-gray-200 dark:text-gray-700 select-none">
+                      |
+                    </span>
                     <a
                       href={project.links[1]}
                       target="_blank"
@@ -239,7 +319,13 @@ export default function Projects(): JSX.Element {
 
 function GitHubIcon() {
   return (
-    <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+    <svg
+      width="15"
+      height="15"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      aria-hidden="true"
+    >
       <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z" />
     </svg>
   );
@@ -247,7 +333,17 @@ function GitHubIcon() {
 
 function LiveIcon() {
   return (
-    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <svg
+      width="13"
+      height="13"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
       <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
       <polyline points="15 3 21 3 21 9" />
       <line x1="10" y1="14" x2="21" y2="3" />

@@ -30,7 +30,7 @@ export default function About(): JSX.Element {
         transition={{ duration: 0.8, ease: "easeOut", delay: 0.1 }}
         className="text-sm mb-12 text-gray-600 dark:text-gray-400"
       >
-        Passionate backend developer crafting scalable systems and exploring the frontiers of technology.
+        Passionate fullstack developer crafting scalable systems and exploring the frontiers of technology.
       </motion.p>
 
       <div className="grid lg:grid-cols-2 gap-12">
@@ -43,9 +43,9 @@ export default function About(): JSX.Element {
           className="space-y-4 text-gray-600 dark:text-gray-300"
         >
           <p>
-            I'm Salauddin, a backend-focused software developer based in
+            I'm Salauddin, a fullstack software developer based in
             Bangladesh with hands-on experience building scalable,
-            production-ready systems using Node.js, TypeScript, and PostgreSQL.
+            production-ready systems using Node.js, TypeScript, SQL and NoSQL Databases, and React.
           </p>
           <p>
             I specialize in designing clean REST APIs, implementing secure
@@ -55,7 +55,7 @@ export default function About(): JSX.Element {
             deploying services with Docker.
           </p>
           <p>
-            Beyond backend work, I've built a full-featured cross-platform mobile
+            Beyond web application, I've also built a full-featured cross-platform mobile
             application using React Native (Expo) and Firebase — an online
             education platform where teachers can create courses, upload videos,
             and build quizzes, while students can subscribe to courses, watch
