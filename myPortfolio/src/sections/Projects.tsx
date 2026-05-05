@@ -33,7 +33,7 @@ const projects: Project[] = [
       "Docker",
     ],
     links: [
-      "https://anonymous-chat-sigma-cyan.vercel.app",
+      "https://roomly-real-time-anonymous-chat-app.vercel.app",
       "https://github.com/shible77/Roomly-Real-Time-Anonymous-Chat-Application",
     ],
     tag: "Real-Time",

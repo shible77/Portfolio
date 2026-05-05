@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export default function About(): JSX.Element {
   const skills = [
-    "Node.js", "Express", "TypeScript", "C/C++", "Java", "Python","PostgreSQL", "MySQL", "Drizzle ORM",
+    "Node.js", "Express", "NestJS", "TypeScript", "C/C++", "Java", "Python","PostgreSQL", "MySQL", "Drizzle ORM",
     "Socket.IO", "Docker", "React Native", "Expo", "Firebase", "TensorFlow",
     "FastAPI", "OpenCV", "JWT", "REST APIs", "Machine Learning", 
     "React", "Redux", "Git", "Tailwind CSS", "Vercel"
